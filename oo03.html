@@ -1,0 +1,20 @@
+<html>
+	<body>
+			<script>
+				function Person(name, age, job){
+					this.name = name;
+					this.age = age;
+					this.job = job;
+					this.sayName = function(){
+						alert(this.name);
+					}
+				}
+				Person("zhangsan", 23, "doctor");
+				alert(window.job);
+				var o = new Object();
+				Person.call(o, "wangminli", 26, "Software Engineer");
+				o.sayName();
+			</script>
+
+	</body>
+</html>
