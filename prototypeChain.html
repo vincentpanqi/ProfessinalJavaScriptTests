@@ -1,0 +1,10 @@
+<html>
+	<body>
+		<script>
+			function f(){this.test="";}
+			console.log(f.__proto__); //function() 
+			console.log(Function.prototype); //function() 
+			console.log(f.__proto__=== Function.prototype); //true
+		</script>
+	</body>
+</html>
