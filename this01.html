@@ -1,0 +1,16 @@
+<html>
+	<body>
+		<script>
+			var name = "the window";
+			var object = {
+				name : "My Object",
+				getNameFunc:function(){
+					return function(){	//注意：返回的是一个函数
+						return 	this.name;
+					}
+				}
+			}
+			alert(object.getNameFunc()()); //注意：这里有两个括号()
+		</script>
+	</body>
+</html>
