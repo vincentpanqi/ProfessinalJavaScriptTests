@@ -1,0 +1,18 @@
+<html>
+	<body>
+		<script>
+		function createFunctions(){
+		var result = new Array();
+		for (var i=0; i < 10; i++){
+		result[i] = function(){ 		/注意：这里每个result接收的实际上是一个函数对象，result[i]实际上是函数名
+		return i;
+		}
+		}
+		return result;
+		}
+		
+		var res = createFunctions();
+		alert(res(i));
+		</script>
+	</body>
+</html>
