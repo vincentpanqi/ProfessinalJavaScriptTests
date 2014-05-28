@@ -1,0 +1,28 @@
+<html>
+	<body>
+		<script>
+			var Person = function(name){
+				this.getName=function(){
+
+					return name;
+				};
+				this.setName=function(value){
+					name = value;
+				};
+			}
+			
+			var person = new Person("Greg");
+			alert(person.getName());
+			person.setName("wangminli");
+			alert(person.getName());
+			alert(person.name);//undefind，无法通过对象直接获得name属性,因为没有直接定义（var name的存在）
+
+			var Color = function(){
+				var colorName;
+			}
+			var color = new Color();
+			color.colorName = "red";
+			alert(color.colorName);//red，可以获得到colorName属性
+		</script>
+	</body>
+</html>
